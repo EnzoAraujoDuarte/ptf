@@ -1,0 +1,35 @@
+#aboutme{
+    height: 100vh;
+}
+
+.text__aboutme{
+    line-height: 3;
+    position: relative; /* Para definir um contexto para os pseudo-elementos */
+    display: inline-block; /* Para que o sublinhado se ajuste ao texto */
+}
+.text__aboutme::after {   content: ''; /* Adiciona um conteúdo ao pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao elemento pai */
+    left: 0; /* Posiciona o sublinhado no início do texto */
+    bottom: 0; /* Posiciona o sublinhado na parte inferior do texto */
+    width: 100%; /* Define a largura do sublinhado igual à largura do texto */
+    height: 2px; /* Altura do sublinhado */
+    background-color: transparent; /* Cor inicial do sublinhado */
+    transition: background-color 0.3s ease; /* Adiciona uma transição para a cor de fundo */
+    z-index: -1; /* Coloca o sublinhado atrás do texto */
+}
+.text__aboutme:hover::after {
+    background-color: #000; /* Cor do sublinhado quando o mouse está sobre o texto */
+}
+.foto__aboutme {
+    border-radius: 36px;
+    width: 100%;
+    height: auto; 
+    display: block; 
+    transition: transform 0.3s ease 
+  }
+  
+  
+  .foto__aboutme:hover {
+    transform: scale(1.2);
+  }
+  

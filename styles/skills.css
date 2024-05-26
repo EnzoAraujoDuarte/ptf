@@ -1,0 +1,104 @@
+.main h1 titulo__skills{
+    color: black;
+}
+
+
+
+.titulo__skills{
+    text-align: center;
+    color: #ffffff;;
+    font-size: 4rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+#skills {
+    text-align: center;
+     height: 100vh; /* Faz a section ocupar toda a altura da viewport */
+    }
+    
+
+
+.main__skills {
+    margin-top: 2%; 
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* caixas quebram para a próxima linha se o espaço for insuficiente */
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.box {
+    text-align: center;
+    margin: 30px; /* Espaçamento entre as caixas */
+}
+
+.box p {
+    margin-bottom: 10px; /* Espaçamento entre o texto e a imagem */
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+.box:hover {
+    transform: scale(1.1);
+
+}
+progress {
+    margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .titulo__skills{
+ padding-top: 1%;
+
+}
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* caixas quebram para a próxima linha se o espaço for insuficiente */
+    position: relative;
+    text-align: center;
+    margin: 2px;
+    transition: transform 0.3s ease;
+}
+
+.box {
+    text-align: center;
+    margin: 2px; /* Espaçamento entre as caixas */
+}
+
+.box p {
+    margin-bottom: 1px; /* Espaçamento entre o texto e a imagem */
+}
+  
+    .container {
+      flex-direction: column;
+      padding-top: 20px;
+    }
+    .main__skills,
+    .main__projects {
+      padding: 20px;
+      padding-top: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .cards {
+      flex-direction: column;
+    }
+  
+    .box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
